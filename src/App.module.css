@@ -6,6 +6,17 @@
    display: grid;
    grid-template-columns: 256px 1fr;
    gap: 2rem;
-   align-items: flex-start;
-   
+   align-items: flex-start;  
+}
+
+@media screen and (max-width: 768px) {
+   /* Como assima estamos usando uma unidade de media relativa "rem" ao usarmos o @ media para 
+   garantir a responsividade TUDO que esta usando esta unidade de medida se ajusta automaticamente
+   na tela, fazendo com que so presamos apenas ajudar o sistema de grid na tela  */
+   html {
+      font-size: 87.5%; /* calculo feito para que TODAS as fontes sejam 14px lembrando que o valor base e 1rem = 16px */
+   }
+   .wrapper {
+      grid-template-columns: 1fr;
+   }
 }
