@@ -9,6 +9,7 @@
    align-items: flex-start;  
 }
 
+
 @media screen and (max-width: 768px) {
    /* Como assima estamos usando uma unidade de media relativa "rem" ao usarmos o @ media para 
    garantir a responsividade TUDO que esta usando esta unidade de medida se ajusta automaticamente
